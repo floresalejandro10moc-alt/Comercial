@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="SDV.DataAccess/SDV.DataAccess.csproj" />
+  <Project Path="SDV.Model/SDV.Model.csproj" />
+  <Project Path="SDV.UI/SDV.UI.csproj" />
+</Solution>

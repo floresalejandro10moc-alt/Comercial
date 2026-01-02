@@ -1,0 +1,79 @@
+﻿<UserControl x:Class="SDV.UI.Views.LibroDiarioView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="#F9FAFB" FontFamily="Segoe UI">
+    <Grid Margin="35,30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="0,0,0,25">
+            <TextBlock Text="Contabilidad - Libro Diario" FontSize="20" FontWeight="SemiBold" Foreground="#111827"/>
+            <TextBlock Text="Consulta de Asientos Contables por Periodo" Foreground="#6B7280" FontSize="12" Margin="0,4,0,0"/>
+        </StackPanel>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.3*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Background="White" CornerRadius="12" BorderBrush="#E5E7EB" BorderThickness="1" Margin="0,0,20,0">
+                <DataGrid ItemsSource="{Binding Asientos}" SelectedItem="{Binding AsientoSeleccionado}" AutoGenerateColumns="False" IsReadOnly="True" GridLinesVisibility="None" RowHeight="65" Background="Transparent" BorderThickness="0" Margin="10">
+                    <DataGrid.Resources>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="Padding" Value="12,10"/>
+                            <Setter Property="Foreground" Value="#6B7280"/>
+                            <Setter Property="FontSize" Value="11"/>
+                        </Style>
+                    </DataGrid.Resources>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="FECHA" Binding="{Binding AsiFechaHora, StringFormat=g}" Width="150"/>
+                        <DataGridTextColumn Header="DESCRIPCIÓN" Binding="{Binding AsiDescripcion}" Width="*"/>
+                        <DataGridTextColumn Header="TOTAL" Binding="{Binding AsiTotalDebe, StringFormat=C2}" Width="110" FontWeight="Bold" Foreground="#111827"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Border>
+
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Border Background="#2C3E50" CornerRadius="10" Padding="18" Margin="0,0,0,15">
+                    <StackPanel>
+                        <TextBlock Text="DETALLE DEL ASIENTO SELECCIONADO" Foreground="#9CA3AF" FontSize="10" FontWeight="Bold" Margin="0,0,0,4"/>
+                        <TextBlock Text="{Binding AsientoSeleccionado.IdAsientoContable}" Foreground="#00D9A5" FontSize="22" FontWeight="Bold"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Grid.Row="1" Background="White" CornerRadius="12" BorderBrush="#E5E7EB" BorderThickness="1">
+                    <DataGrid ItemsSource="{Binding DetalleAsiento}" AutoGenerateColumns="False" IsReadOnly="True" GridLinesVisibility="Horizontal" RowHeight="50" Background="Transparent" BorderThickness="0" Margin="10">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="CUENTA" Binding="{Binding IdCodigoCuenta}" Width="130" FontWeight="Bold"/>
+                            <DataGridTextColumn Header="DEBE" Binding="{Binding CxaMontoDebe, StringFormat=N2}" Width="*" Foreground="#059669"/>
+                            <DataGridTextColumn Header="HABER" Binding="{Binding CxaMontoHaber, StringFormat=N2}" Width="*" Foreground="#DC2626"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Border>
+
+                <Border Grid.Row="2" Background="#F0FDFA" Margin="0,15,0,0" Padding="20" CornerRadius="12" BorderBrush="#CCFBF1" BorderThickness="1">
+                    <UniformGrid Columns="2">
+                        <StackPanel>
+                            <TextBlock Text="SUMA DEBE" FontSize="10" Foreground="#0D9488" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding TotalDebeDetalle, StringFormat=C2}" FontSize="20" FontWeight="Bold" Foreground="#111827"/>
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBlock Text="SUMA HABER" FontSize="10" Foreground="#0D9488" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding TotalHaberDetalle, StringFormat=C2}" FontSize="20" FontWeight="Bold" Foreground="#111827"/>
+                        </StackPanel>
+                    </UniformGrid>
+                </Border>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,391 @@
+﻿<UserControl x:Class="SDV.UI.Views.GenerarRolView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="clr-namespace:SDV.UI.ViewModels"
+             Background="#F4F7F6" FontFamily="Segoe UI">
+
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVis"/>
+
+        <Style TargetType="ScrollBar">
+            <Setter Property="Background" Value="Transparent"/>
+        </Style>
+
+        <Style x:Key="GridActionButton" TargetType="Button">
+            <Setter Property="Background" Value="#F4F7F6"/>
+            <Setter Property="BorderBrush" Value="#E0E0E0"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Width" Value="35"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Margin" Value="5,0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#E0E0E0"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="WideActionButton" TargetType="Button">
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Padding" Value="15,0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <UserControl.DataContext>
+        <vm:NominaViewModel/>
+    </UserControl.DataContext>
+
+    <TabControl Margin="20" Background="Transparent" BorderThickness="0" SelectedIndex="{Binding TabSeleccionadoIndex}">
+        <TabControl.ItemContainerStyle>
+            <Style TargetType="TabItem">
+                <Setter Property="Visibility" Value="Collapsed"/>
+            </Style>
+        </TabControl.ItemContainerStyle>
+
+        <TabItem>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0" Margin="0,0,0,20">
+                    <TextBlock Text="Talento Humano - Historial de Roles" FontSize="14" Foreground="#777" Margin="0,0,0,5"/>
+                    <TextBlock Text="Nómina de Empleados" FontSize="28" FontWeight="Bold" Foreground="#2C3E50"/>
+                </StackPanel>
+
+                <Grid Grid.Row="1" Margin="0,0,0,20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Grid.Column="0" Command="{Binding RefrescarHistorialCommand}" Style="{StaticResource GridActionButton}" Margin="0,0,10,0" ToolTip="Actualizar datos">
+                        <TextBlock Text="🔄" FontSize="18"/>
+                    </Button>
+
+                    <Border Grid.Column="1" Background="White" CornerRadius="20" Height="45" Margin="0,0,20,0" BorderBrush="#E0E0E0" BorderThickness="1">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="🔍" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#BDC3C7"/>
+                            <TextBox Grid.Column="1" Text="{Binding FiltroBusqueda, UpdateSourceTrigger=PropertyChanged}" BorderThickness="0" Background="Transparent" VerticalContentAlignment="Center" FontSize="14" Foreground="#555"/>
+                        </Grid>
+                    </Border>
+
+                    <Button Grid.Column="2" Command="{Binding IrACrearNuevoCommand}" Background="#00C9A7" Style="{StaticResource WideActionButton}" Content="+ Nuevo Rol de Pago" Padding="20,0" MinWidth="180"/>
+                </Grid>
+
+                <Border Grid.Row="2" Background="White" CornerRadius="10" Padding="5">
+                    <Border.Effect>
+                        <DropShadowEffect Color="#E0E0E0" BlurRadius="15" ShadowDepth="2" Opacity="0.5"/>
+                    </Border.Effect>
+                    <DataGrid ItemsSource="{Binding ListaRolesPaginada}" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" GridLinesVisibility="None" HeadersVisibility="Column" Background="White" BorderThickness="0" RowHeight="60">
+                        <DataGrid.Resources>
+                            <Style TargetType="DataGridColumnHeader">
+                                <Setter Property="Background" Value="Transparent"/>
+                                <Setter Property="Foreground" Value="#95A5A6"/>
+                                <Setter Property="FontWeight" Value="Bold"/>
+                                <Setter Property="FontSize" Value="11"/>
+                                <Setter Property="Padding" Value="10,15"/>
+                            </Style>
+                        </DataGrid.Resources>
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn Header="ESTADO" Width="100">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Border x:Name="EstadoBorder" CornerRadius="12" Padding="8,4" Background="#E8F5E9">
+                                            <TextBlock x:Name="EstadoText" Text="{Binding EstadoPxE}" FontWeight="Bold" FontSize="11" HorizontalAlignment="Center" Foreground="#2E7D32"/>
+                                        </Border>
+                                        <DataTemplate.Triggers>
+                                            <DataTrigger Binding="{Binding EstadoPxE}" Value="PEN">
+                                                <Setter TargetName="EstadoBorder" Property="Background" Value="#FFF8E1"/>
+                                                <Setter TargetName="EstadoText" Property="Foreground" Value="#F57F17"/>
+                                            </DataTrigger>
+                                        </DataTemplate.Triggers>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+
+                            <DataGridTextColumn Header="PERIODO" Binding="{Binding IdPago}" Width="90" Foreground="#7F8C8D"/>
+
+                            <DataGridTemplateColumn Header="COLABORADOR" Width="*">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Border Width="35" Height="35" CornerRadius="18" Background="#E3F2FD" Margin="0,0,12,0">
+                                                <TextBlock Text="👤" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#2196F3"/>
+                                            </Border>
+                                            <TextBlock Text="{Binding NombreEmpleado}" FontWeight="Bold" Foreground="#2C3E50" VerticalAlignment="Center" FontSize="14"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+
+                            <DataGridTextColumn Header="(+) BENEFICIOS" Binding="{Binding EmpBonificaciones, StringFormat=C2}" Width="115" Foreground="#27AE60" FontWeight="SemiBold"/>
+                            <DataGridTextColumn Header="(-) DESCUENTOS" Binding="{Binding EmpDescuentos, StringFormat=C2}" Width="115" Foreground="#C0392B" FontWeight="SemiBold"/>
+                            <DataGridTextColumn Header="NETO A PAGAR" Binding="{Binding EmpValorNeto, StringFormat=C2}" Width="130" FontWeight="Bold" Foreground="#2C3E50"/>
+
+                            <DataGridTemplateColumn Header="ACCIONES" Width="100">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                            <Button Style="{StaticResource GridActionButton}" ToolTip="Editar" Command="{Binding DataContext.CargarParaEditarCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" CommandParameter="{Binding}">
+                                                <TextBlock Text="✏️"/>
+                                            </Button>
+                                            <Button Style="{StaticResource GridActionButton}" ToolTip="Imprimir" Command="{Binding DataContext.ImprimirRolCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" CommandParameter="{Binding}">
+                                                <TextBlock Text="👁️"/>
+                                            </Button>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Border>
+
+                <Grid Grid.Row="3" Margin="0,15">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0" Orientation="Horizontal">
+                        <Border Background="#EBFAFA" CornerRadius="10" Padding="12" Margin="0,0,10,0" Width="170">
+                            <StackPanel>
+                                <TextBlock Text="Gasto Nómina" Foreground="#008080" FontSize="11" FontWeight="SemiBold"/>
+                                <TextBlock Text="{Binding TotalGastoNomina, StringFormat=C2}" FontSize="18" FontWeight="Bold" Foreground="#2C3E50"/>
+                            </StackPanel>
+                        </Border>
+                        <Border Background="#FFF9E7" CornerRadius="10" Padding="12" Margin="0,0,10,0" Width="120">
+                            <StackPanel>
+                                <TextBlock Text="Pendientes" Foreground="#D4AC0D" FontSize="11" FontWeight="SemiBold"/>
+                                <TextBlock Text="{Binding CantidadRolesPendientes}" FontSize="18" FontWeight="Bold" Foreground="#2C3E50"/>
+                            </StackPanel>
+                        </Border>
+                        <Border Background="#E8F5E9" CornerRadius="10" Padding="12" Width="120">
+                            <StackPanel>
+                                <TextBlock Text="Aprobados" Foreground="#2E7D32" FontSize="11" FontWeight="SemiBold"/>
+                                <TextBlock Text="{Binding CantidadRolesAprobados}" FontSize="18" FontWeight="Bold" Foreground="#2C3E50"/>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+
+                    <Border Grid.Column="1" Background="White" CornerRadius="10" Margin="15,0" Padding="15" Width="280" HorizontalAlignment="Center">
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="10" Opacity="0.05" ShadowDepth="1"/>
+                        </Border.Effect>
+                        <StackPanel>
+                            <TextBlock Text="Tendencia de Gasto (Últimos 3)" FontWeight="Bold" Margin="0,0,0,10" Foreground="#34495E" FontSize="10" HorizontalAlignment="Center"/>
+                            <UniformGrid Columns="3" Height="65" VerticalAlignment="Bottom">
+                                <StackPanel VerticalAlignment="Bottom">
+                                    <Border Background="#3498DB" Width="22" Height="{Binding AlturaBarra1}" CornerRadius="3,3,0,0" ToolTip="Hace 2 meses"/>
+                                    <TextBlock Text="Oct" HorizontalAlignment="Center" FontSize="9" Margin="0,2,0,0"/>
+                                </StackPanel>
+                                <StackPanel VerticalAlignment="Bottom">
+                                    <Border Background="#27AE60" Width="22" Height="{Binding AlturaBarra2}" CornerRadius="3,3,0,0" ToolTip="Mes anterior"/>
+                                    <TextBlock Text="Nov" HorizontalAlignment="Center" FontSize="9" Margin="0,2,0,0"/>
+                                </StackPanel>
+                                <StackPanel VerticalAlignment="Bottom">
+                                    <Border Background="#E67E22" Width="22" Height="{Binding AlturaBarra3}" CornerRadius="3,3,0,0" ToolTip="Mes actual"/>
+                                    <TextBlock Text="Dic" HorizontalAlignment="Center" FontSize="9" Margin="0,2,0,0"/>
+                                </StackPanel>
+                            </UniformGrid>
+                        </StackPanel>
+                    </Border>
+
+                    <StackPanel Grid.Column="2" VerticalAlignment="Bottom">
+                        <Button Command="{Binding GenerarArchivoBancoCommand}" Background="#2D3748" Style="{StaticResource WideActionButton}" Content="🏦 Archivo Banco" Width="160" Margin="0,0,0,5"/>
+                        <Button Command="{Binding ExportarHistorialExcelCommand}" Background="#27AE60" Style="{StaticResource WideActionButton}" Content="📊 Exportar Excel" Width="160" Margin="0,0,0,5"/>
+                        <Button Command="{Binding ImprimirReporteMensualCommand}" Background="#2980B9" Style="{StaticResource WideActionButton}" Content="🖨️ Reporte Mensual" Width="160"/>
+                    </StackPanel>
+                </Grid>
+
+                <Grid Grid.Row="4" Margin="0,5,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Registros de 15 en 15" Foreground="Gray" VerticalAlignment="Center" FontStyle="Italic" FontSize="11"/>
+                    <StackPanel Grid.Column="2" Orientation="Horizontal">
+                        <Button Content="Anterior" Command="{Binding AnteriorPaginaCommand}" Width="80" Height="30" Margin="0,0,10,0" Background="White" BorderBrush="#DDD"/>
+                        <TextBlock VerticalAlignment="Center" Margin="0,0,10,0">
+                            <Run Text="Página"/>
+                            <Run Text="{Binding PaginaActual}" FontWeight="Bold"/>
+                            <Run Text="de"/>
+                            <Run Text="{Binding TotalPaginas}" FontWeight="Bold"/>
+                        </TextBlock>
+                        <Button Content="Siguiente" Command="{Binding SiguientePaginaCommand}" Width="80" Height="30" Background="White" BorderBrush="#DDD"/>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </TabItem>
+
+        <TabItem>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.3*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <ScrollViewer Grid.Column="0" VerticalScrollBarVisibility="Auto" Margin="0,0,20,0">
+                    <StackPanel>
+                        <Grid Margin="0,0,0,20">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Button Grid.Column="0" Content="⬅ Regresar" Command="{Binding RegresarCommand}" Background="#95A5A6" Style="{StaticResource WideActionButton}" Width="100"/>
+                            <TextBlock Grid.Column="1" Text="Gestión de Rol" FontSize="20" FontWeight="Bold" Foreground="#2C3E50" VerticalAlignment="Center" Margin="15,0,0,0"/>
+                        </Grid>
+
+                        <TextBlock Text="Empleado:" Foreground="Gray"/>
+                        <ComboBox ItemsSource="{Binding ListaEmpleadosView}" SelectedItem="{Binding EmpleadoSeleccionado}" DisplayMemberPath="NombreCompleto" IsEditable="True" IsEnabled="{Binding IsModoCreacion}" Text="{Binding FiltroEmpleado, UpdateSourceTrigger=PropertyChanged}" Height="40" Margin="0,5,0,20" FontSize="14"/>
+
+                        <Border Background="#F8F9FA" BorderBrush="#E5E7E9" BorderThickness="1" Padding="20" CornerRadius="8" Margin="0,0,0,25">
+                            <StackPanel>
+                                <TextBlock Text="RESUMEN FINANCIERO" FontWeight="Bold" Margin="0,0,0,15" FontSize="14"/>
+                                <Grid Margin="0,4">
+                                    <TextBlock Text="Sueldo Base:"/>
+                                    <TextBlock Text="{Binding RolDetalle.EmpSueldo, StringFormat=C2}" FontWeight="Bold" HorizontalAlignment="Right"/>
+                                </Grid>
+                                <Grid Margin="0,4">
+                                    <TextBlock Text="(+) Bonos:" Foreground="#27AE60"/>
+                                    <TextBlock Text="{Binding RolDetalle.EmpBonificaciones, StringFormat=C2}" Foreground="#27AE60" FontWeight="Bold" HorizontalAlignment="Right"/>
+                                </Grid>
+                                <Grid Margin="0,4">
+                                    <TextBlock Text="(-) Descuentos:" Foreground="#C0392B"/>
+                                    <TextBlock Text="{Binding RolDetalle.EmpDescuentos, StringFormat=C2}" Foreground="#C0392B" FontWeight="Bold" HorizontalAlignment="Right"/>
+                                </Grid>
+                                <Separator Margin="0,10"/>
+                                <Grid Margin="0,4">
+                                    <TextBlock Text="NETO:" FontWeight="Bold" FontSize="16"/>
+                                    <TextBlock Text="{Binding RolDetalle.EmpValorNeto, StringFormat=C2}" FontSize="16" FontWeight="Bold" Foreground="#2980B9" HorizontalAlignment="Right"/>
+                                </Grid>
+                            </StackPanel>
+                        </Border>
+
+                        <GroupBox Header="Gestión de Novedades" Padding="10" Margin="0,0,0,25" BorderBrush="#BDC3C7" FontWeight="SemiBold">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="20"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <StackPanel Grid.Column="0">
+                                    <TextBlock Text="💰 Bonificaciones" Foreground="#27AE60" Margin="0,0,0,5"/>
+                                    <ComboBox ItemsSource="{Binding ListaBonosView}" SelectedItem="{Binding BonoSeleccionado}" DisplayMemberPath="Descripcion" Height="35" Margin="0,0,0,5"/>
+                                    <Grid Margin="0,0,0,10">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBox Grid.Column="0" Text="{Binding ValorBonoInput}" Height="35" VerticalContentAlignment="Center" Margin="0,0,5,0"/>
+                                        <Button Grid.Column="1" Content="AGREGAR" Command="{Binding AgregarBonoCommand}" Background="#27AE60" Style="{StaticResource WideActionButton}"/>
+                                    </Grid>
+                                    <DataGrid ItemsSource="{Binding BonosAplicados}" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" HeadersVisibility="None" GridLinesVisibility="Horizontal" Height="150" Background="White" BorderBrush="#EEE" BorderThickness="1">
+                                        <DataGrid.Columns>
+                                            <DataGridTextColumn Binding="{Binding Descripcion}" Width="*" />
+                                            <DataGridTextColumn Binding="{Binding BxeValor, StringFormat=C2}" Width="Auto" FontWeight="Bold" Foreground="#27AE60"/>
+                                            <DataGridTemplateColumn Width="40">
+                                                <DataGridTemplateColumn.CellTemplate>
+                                                    <DataTemplate>
+                                                        <Button Content="🗑️" Command="{Binding DataContext.EliminarBonoDetalleCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" CommandParameter="{Binding}" Background="Transparent" BorderThickness="0" Foreground="Red" Cursor="Hand"/>
+                                                    </DataTemplate>
+                                                </DataGridTemplateColumn.CellTemplate>
+                                            </DataGridTemplateColumn>
+                                        </DataGrid.Columns>
+                                    </DataGrid>
+                                </StackPanel>
+
+                                <StackPanel Grid.Column="2">
+                                    <TextBlock Text="📉 Descuentos" Foreground="#C0392B" Margin="0,0,0,5"/>
+                                    <ComboBox ItemsSource="{Binding ListaDescuentosView}" SelectedItem="{Binding DescuentoSeleccionado}" DisplayMemberPath="Descripcion" Height="35" Margin="0,0,0,5"/>
+                                    <Grid Margin="0,0,0,10">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBox Grid.Column="0" Text="{Binding ValorDescuentoInput}" Height="35" VerticalContentAlignment="Center" Margin="0,0,5,0"/>
+                                        <Button Grid.Column="1" Content="AGREGAR" Command="{Binding AgregarDescuentoCommand}" Background="#C0392B" Style="{StaticResource WideActionButton}"/>
+                                    </Grid>
+                                    <DataGrid ItemsSource="{Binding DescuentosAplicados}" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" HeadersVisibility="None" GridLinesVisibility="Horizontal" Height="150" Background="White" BorderBrush="#EEE" BorderThickness="1">
+                                        <DataGrid.Columns>
+                                            <DataGridTextColumn Binding="{Binding Descripcion}" Width="*" />
+                                            <DataGridTextColumn Binding="{Binding DxeValor, StringFormat=C2}" Width="Auto" FontWeight="Bold" Foreground="#C0392B"/>
+                                            <DataGridTemplateColumn Width="40">
+                                                <DataGridTemplateColumn.CellTemplate>
+                                                    <DataTemplate>
+                                                        <Button Content="🗑️" Command="{Binding DataContext.EliminarDescuentoDetalleCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" CommandParameter="{Binding}" Background="Transparent" BorderThickness="0" Foreground="Red" Cursor="Hand"/>
+                                                    </DataTemplate>
+                                                </DataGridTemplateColumn.CellTemplate>
+                                            </DataGridTemplateColumn>
+                                        </DataGrid.Columns>
+                                    </DataGrid>
+                                </StackPanel>
+                            </Grid>
+                        </GroupBox>
+
+                        <Grid Margin="0,10,0,20">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Button Grid.Column="0" Content="🗑️ ANULAR ROL" Command="{Binding AnularDesdeGestionCommand}" Background="#C0392B" Style="{StaticResource WideActionButton}" HorizontalAlignment="Left" Width="140"/>
+                            <StackPanel Grid.Column="1" Orientation="Horizontal">
+                                <Button Content="💾 GUARDAR" Command="{Binding GuardarRolCommand}" Background="#34495E" Style="{StaticResource WideActionButton}" Width="120" Margin="0,0,10,0"/>
+                                <Button Content="✅ GUARDAR Y FIRMAR" Command="{Binding GuardarYFirmarCommand}" Background="#2980B9" Style="{StaticResource WideActionButton}" Width="180"/>
+                            </StackPanel>
+                        </Grid>
+                    </StackPanel>
+                </ScrollViewer>
+
+                <Border Grid.Column="1" Background="#FFFBE6" BorderBrush="#D4AC0D" BorderThickness="1" CornerRadius="3" Padding="15">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="VISTA PREVIA LIBRO DIARIO" Foreground="#7D6608" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                        <TextBox Grid.Row="1" Text="{Binding AsientoTexto}" FontFamily="Courier New" Background="Transparent" BorderThickness="0" IsReadOnly="True" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
+                    </Grid>
+                </Border>
+            </Grid>
+        </TabItem>
+    </TabControl>
+</UserControl>

@@ -1,0 +1,68 @@
+﻿<Window x:Class="SDV.UI.Views.PrintPreviewWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Vista Previa de Impresión - SDV" Height="850" Width="1000" 
+        WindowStartupLocation="CenterScreen" Background="#F4F7F6"
+        WindowStyle="ThreeDBorderWindow">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Background="#2D3748" Padding="15,5">
+            <Grid>
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBlock Text="📄" FontSize="20" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                    <TextBlock Text="VISTA PREVIA DEL ROL" Foreground="White" FontWeight="Bold" FontSize="16" VerticalAlignment="Center"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Click="BtnImprimirModerno_Click"
+                            Background="#4A5568" Foreground="White" BorderThickness="0"
+                            Padding="15,8" Cursor="Hand" Margin="0,0,10,0">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="🖨️" Margin="0,0,8,0"/>
+                            <TextBlock Text="IMPRIMIR AHORA" FontWeight="SemiBold"/>
+                        </StackPanel>
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="4"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+
+                    <Button Click="BtnExportarPDF_Click"
+                            Background="#27AE60" Foreground="White" BorderThickness="0"
+                            Padding="15,8" Cursor="Hand">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="💾" Margin="0,0,8,0"/>
+                            <TextBlock Text="GUARDAR PDF" FontWeight="SemiBold"/>
+                        </StackPanel>
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="4"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <Border Grid.Row="1" Margin="20" Background="White" CornerRadius="5">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="15" Opacity="0.1" ShadowDepth="0"/>
+            </Border.Effect>
+            <DocumentViewer Name="Previewer" ContextMenu="{x:Null}">
+                <DocumentViewer.Template>
+                    <ControlTemplate TargetType="DocumentViewer">
+                        <Border BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}">
+                            <ScrollViewer x:Name="PART_ContentHost" CanContentScroll="true" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"/>
+                        </Border>
+                    </ControlTemplate>
+                </DocumentViewer.Template>
+            </DocumentViewer>
+        </Border>
+    </Grid>
+</Window>

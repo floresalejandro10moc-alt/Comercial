@@ -1,0 +1,768 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\views\\librodiarioview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\views\\librodiarioview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\views\\plancuentasview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\views\\plancuentasview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\views\\empleadoview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\views\\empleadoview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\views\\formularioempleado.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\views\\formularioempleado.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\views\\generarrolview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\views\\generarrolview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\viewmodels\\librodiarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\viewmodels\\librodiarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\viewmodels\\plancuentasviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\viewmodels\\plancuentasviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F829563-73D1-9415-A3F8-A8BB76278D35}|SDV.DataAccess\\SDV.DataAccess.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.dataaccess\\contabilidadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F829563-73D1-9415-A3F8-A8BB76278D35}|SDV.DataAccess\\SDV.DataAccess.csproj|solutionrelative:sdv.dataaccess\\contabilidadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7CF759F-3577-3A3E-6F1C-8B2A469A73B1}|SDV.Model\\SDV.Model.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.model\\contabilidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7CF759F-3577-3A3E-6F1C-8B2A469A73B1}|SDV.Model\\SDV.Model.csproj|solutionrelative:sdv.model\\contabilidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F829563-73D1-9415-A3F8-A8BB76278D35}|SDV.DataAccess\\SDV.DataAccess.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.dataaccess\\empleadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F829563-73D1-9415-A3F8-A8BB76278D35}|SDV.DataAccess\\SDV.DataAccess.csproj|solutionrelative:sdv.dataaccess\\empleadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7CF759F-3577-3A3E-6F1C-8B2A469A73B1}|SDV.Model\\SDV.Model.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.model\\bonxempxpag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7CF759F-3577-3A3E-6F1C-8B2A469A73B1}|SDV.Model\\SDV.Model.csproj|solutionrelative:sdv.model\\bonxempxpag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F829563-73D1-9415-A3F8-A8BB76278D35}|SDV.DataAccess\\SDV.DataAccess.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.dataaccess\\sdv.dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9F829563-73D1-9415-A3F8-A8BB76278D35}|SDV.DataAccess\\SDV.DataAccess.csproj|solutionrelative:sdv.dataaccess\\sdv.dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\views\\gestionnovedadesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\views\\gestionnovedadesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\viewmodels\\novedadesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\viewmodels\\novedadesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\viewmodels\\nominaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\viewmodels\\nominaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F829563-73D1-9415-A3F8-A8BB76278D35}|SDV.DataAccess\\SDV.DataAccess.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.dataaccess\\nominarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F829563-73D1-9415-A3F8-A8BB76278D35}|SDV.DataAccess\\SDV.DataAccess.csproj|solutionrelative:sdv.dataaccess\\nominarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7CF759F-3577-3A3E-6F1C-8B2A469A73B1}|SDV.Model\\SDV.Model.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.model\\bonificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7CF759F-3577-3A3E-6F1C-8B2A469A73B1}|SDV.Model\\SDV.Model.csproj|solutionrelative:sdv.model\\bonificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\sdv.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\sdv.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F829563-73D1-9415-A3F8-A8BB76278D35}|SDV.DataAccess\\SDV.DataAccess.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.dataaccess\\logrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F829563-73D1-9415-A3F8-A8BB76278D35}|SDV.DataAccess\\SDV.DataAccess.csproj|solutionrelative:sdv.dataaccess\\logrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7CF759F-3577-3A3E-6F1C-8B2A469A73B1}|SDV.Model\\SDV.Model.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.model\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7CF759F-3577-3A3E-6F1C-8B2A469A73B1}|SDV.Model\\SDV.Model.csproj|solutionrelative:sdv.model\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\views\\generarrolview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\views\\generarrolview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\views\\printpreviewwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\views\\printpreviewwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\services\\printservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\services\\printservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\views\\printpreviewwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\views\\printpreviewwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\viewmodels\\empleadoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\viewmodels\\empleadoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\views\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\views\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\views\\custommessagebox.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\views\\custommessagebox.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\views\\logsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\views\\logsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aleji\\AppData\\Local\\Temp\\.vsdbgsrc\\2c2dbd0e8613db5547a15cc48351e3de58ea1cb004f2006ca6c634e3eb5ff18c\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7CF759F-3577-3A3E-6F1C-8B2A469A73B1}|SDV.Model\\SDV.Model.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.model\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7CF759F-3577-3A3E-6F1C-8B2A469A73B1}|SDV.Model\\SDV.Model.csproj|solutionrelative:sdv.model\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7CF759F-3577-3A3E-6F1C-8B2A469A73B1}|SDV.Model\\SDV.Model.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.model\\desxempxpag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7CF759F-3577-3A3E-6F1C-8B2A469A73B1}|SDV.Model\\SDV.Model.csproj|solutionrelative:sdv.model\\desxempxpag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\viewmodels\\logsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\viewmodels\\logsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\views\\logsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\views\\logsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F829563-73D1-9415-A3F8-A8BB76278D35}|SDV.DataAccess\\SDV.DataAccess.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.dataaccess\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F829563-73D1-9415-A3F8-A8BB76278D35}|SDV.DataAccess\\SDV.DataAccess.csproj|solutionrelative:sdv.dataaccess\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7CF759F-3577-3A3E-6F1C-8B2A469A73B1}|SDV.Model\\SDV.Model.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.model\\pagxemp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7CF759F-3577-3A3E-6F1C-8B2A469A73B1}|SDV.Model\\SDV.Model.csproj|solutionrelative:sdv.model\\pagxemp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aleji\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\views\\formularioempleado.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\views\\formularioempleado.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\services\\messagedialogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\services\\messagedialogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\views\\custommessagebox.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\views\\custommessagebox.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|c:\\users\\aleji\\source\\repos\\sistemaventassdv\\sdv.ui\\views\\empleadoview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC53F122-A779-7BA3-F204-8227DE65D982}|SDV.UI\\SDV.UI.csproj|solutionrelative:sdv.ui\\views\\empleadoview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 244,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\App.xaml",
+              "RelativeDocumentMoniker": "SDV.UI\\App.xaml",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\App.xaml",
+              "RelativeToolTip": "SDV.UI\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-14T04:23:40.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GenerarRolView.xaml",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\GenerarRolView.xaml",
+              "RelativeDocumentMoniker": "SDV.UI\\Views\\GenerarRolView.xaml",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\GenerarRolView.xaml",
+              "RelativeToolTip": "SDV.UI\\Views\\GenerarRolView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-16T15:43:52.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormularioEmpleado.xaml",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\FormularioEmpleado.xaml",
+              "RelativeDocumentMoniker": "SDV.UI\\Views\\FormularioEmpleado.xaml",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\FormularioEmpleado.xaml",
+              "RelativeToolTip": "SDV.UI\\Views\\FormularioEmpleado.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-14T03:44:03.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmpleadoView.xaml",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\EmpleadoView.xaml",
+              "RelativeDocumentMoniker": "SDV.UI\\Views\\EmpleadoView.xaml",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\EmpleadoView.xaml",
+              "RelativeToolTip": "SDV.UI\\Views\\EmpleadoView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-14T04:37:22.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlanCuentasView.xaml",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\PlanCuentasView.xaml",
+              "RelativeDocumentMoniker": "SDV.UI\\Views\\PlanCuentasView.xaml",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\PlanCuentasView.xaml*",
+              "RelativeToolTip": "SDV.UI\\Views\\PlanCuentasView.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-30T03:40:25.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LibroDiarioView.xaml",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\LibroDiarioView.xaml",
+              "RelativeDocumentMoniker": "SDV.UI\\Views\\LibroDiarioView.xaml",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\LibroDiarioView.xaml*",
+              "RelativeToolTip": "SDV.UI\\Views\\LibroDiarioView.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-30T03:40:44.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EmpleadoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.DataAccess\\EmpleadoRepository.cs",
+              "RelativeDocumentMoniker": "SDV.DataAccess\\EmpleadoRepository.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.DataAccess\\EmpleadoRepository.cs",
+              "RelativeToolTip": "SDV.DataAccess\\EmpleadoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T03:35:56.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PlanCuentasViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\ViewModels\\PlanCuentasViewModel.cs",
+              "RelativeDocumentMoniker": "SDV.UI\\ViewModels\\PlanCuentasViewModel.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\ViewModels\\PlanCuentasViewModel.cs",
+              "RelativeToolTip": "SDV.UI\\ViewModels\\PlanCuentasViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T03:39:30.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LibroDiarioViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\ViewModels\\LibroDiarioViewModel.cs",
+              "RelativeDocumentMoniker": "SDV.UI\\ViewModels\\LibroDiarioViewModel.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\ViewModels\\LibroDiarioViewModel.cs",
+              "RelativeToolTip": "SDV.UI\\ViewModels\\LibroDiarioViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T03:39:54.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "SDV.UI\\Views\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\MainWindow.xaml",
+              "RelativeToolTip": "SDV.UI\\Views\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-26T21:41:41.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "SDV.UI\\Views\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\MainWindow.xaml.cs",
+              "RelativeToolTip": "SDV.UI\\Views\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T03:30:59.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "SDV.UI\\ViewModels\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "SDV.UI\\ViewModels\\MainViewModel.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAqwHAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T02:44:42.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ContabilidadRepository.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.DataAccess\\ContabilidadRepository.cs",
+              "RelativeDocumentMoniker": "SDV.DataAccess\\ContabilidadRepository.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.DataAccess\\ContabilidadRepository.cs",
+              "RelativeToolTip": "SDV.DataAccess\\ContabilidadRepository.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAowDQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T03:16:20.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Contabilidad.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.Model\\Contabilidad.cs",
+              "RelativeDocumentMoniker": "SDV.Model\\Contabilidad.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.Model\\Contabilidad.cs",
+              "RelativeToolTip": "SDV.Model\\Contabilidad.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T03:20:55.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BonxEmpxPag.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.Model\\BonxEmpxPag.cs",
+              "RelativeDocumentMoniker": "SDV.Model\\BonxEmpxPag.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.Model\\BonxEmpxPag.cs",
+              "RelativeToolTip": "SDV.Model\\BonxEmpxPag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T03:26:30.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "SDV.UI\\ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "SDV.UI\\ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T02:27:37.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "NominaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.DataAccess\\NominaRepository.cs",
+              "RelativeDocumentMoniker": "SDV.DataAccess\\NominaRepository.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.DataAccess\\NominaRepository.cs",
+              "RelativeToolTip": "SDV.DataAccess\\NominaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T22:08:55.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "NovedadesViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\ViewModels\\NovedadesViewModel.cs",
+              "RelativeDocumentMoniker": "SDV.UI\\ViewModels\\NovedadesViewModel.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\ViewModels\\NovedadesViewModel.cs",
+              "RelativeToolTip": "SDV.UI\\ViewModels\\NovedadesViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T02:39:06.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GestionNovedadesView.xaml",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\GestionNovedadesView.xaml",
+              "RelativeDocumentMoniker": "SDV.UI\\Views\\GestionNovedadesView.xaml",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\GestionNovedadesView.xaml",
+              "RelativeToolTip": "SDV.UI\\Views\\GestionNovedadesView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-30T02:38:08.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Bonificacion.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.Model\\Bonificacion.cs",
+              "RelativeDocumentMoniker": "SDV.Model\\Bonificacion.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.Model\\Bonificacion.cs",
+              "RelativeToolTip": "SDV.Model\\Bonificacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T14:09:59.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SDV.DataAccess.csproj",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.DataAccess\\SDV.DataAccess.csproj",
+              "RelativeDocumentMoniker": "SDV.DataAccess\\SDV.DataAccess.csproj",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.DataAccess\\SDV.DataAccess.csproj",
+              "RelativeToolTip": "SDV.DataAccess\\SDV.DataAccess.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-14T03:32:23.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "NominaViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\ViewModels\\NominaViewModel.cs",
+              "RelativeDocumentMoniker": "SDV.UI\\ViewModels\\NominaViewModel.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\ViewModels\\NominaViewModel.cs",
+              "RelativeToolTip": "SDV.UI\\ViewModels\\NominaViewModel.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAQwFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T01:21:06.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LogRepository.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.DataAccess\\LogRepository.cs",
+              "RelativeDocumentMoniker": "SDV.DataAccess\\LogRepository.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.DataAccess\\LogRepository.cs",
+              "RelativeToolTip": "SDV.DataAccess\\LogRepository.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAowDkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T21:31:05.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "SDV.UI.csproj",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\SDV.UI.csproj",
+              "RelativeDocumentMoniker": "SDV.UI\\SDV.UI.csproj",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\SDV.UI.csproj",
+              "RelativeToolTip": "SDV.UI\\SDV.UI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-14T03:33:21.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "PrintPreviewWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\PrintPreviewWindow.xaml.cs",
+              "RelativeDocumentMoniker": "SDV.UI\\Views\\PrintPreviewWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\PrintPreviewWindow.xaml.cs",
+              "RelativeToolTip": "SDV.UI\\Views\\PrintPreviewWindow.xaml.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAkwDoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T01:47:29.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Empleado.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.Model\\Empleado.cs",
+              "RelativeDocumentMoniker": "SDV.Model\\Empleado.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.Model\\Empleado.cs",
+              "RelativeToolTip": "SDV.Model\\Empleado.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAowBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T03:34:18.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PrintPreviewWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\PrintPreviewWindow.xaml",
+              "RelativeDocumentMoniker": "SDV.UI\\Views\\PrintPreviewWindow.xaml",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\PrintPreviewWindow.xaml",
+              "RelativeToolTip": "SDV.UI\\Views\\PrintPreviewWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-27T01:47:06.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "GenerarRolView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\GenerarRolView.xaml.cs",
+              "RelativeDocumentMoniker": "SDV.UI\\Views\\GenerarRolView.xaml.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\GenerarRolView.xaml.cs",
+              "RelativeToolTip": "SDV.UI\\Views\\GenerarRolView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T00:36:06.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PrintService.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Services\\PrintService.cs",
+              "RelativeDocumentMoniker": "SDV.UI\\Services\\PrintService.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Services\\PrintService.cs",
+              "RelativeToolTip": "SDV.UI\\Services\\PrintService.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAkwMkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T23:32:05.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "EmpleadoViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\ViewModels\\EmpleadoViewModel.cs",
+              "RelativeDocumentMoniker": "SDV.UI\\ViewModels\\EmpleadoViewModel.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\ViewModels\\EmpleadoViewModel.cs",
+              "RelativeToolTip": "SDV.UI\\ViewModels\\EmpleadoViewModel.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T23:58:36.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "LoginView.xaml",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\LoginView.xaml",
+              "RelativeDocumentMoniker": "SDV.UI\\Views\\LoginView.xaml",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\LoginView.xaml",
+              "RelativeToolTip": "SDV.UI\\Views\\LoginView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-27T23:31:41.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CustomMessageBox.xaml",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\CustomMessageBox.xaml",
+              "RelativeDocumentMoniker": "SDV.UI\\Views\\CustomMessageBox.xaml",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\CustomMessageBox.xaml",
+              "RelativeToolTip": "SDV.UI\\Views\\CustomMessageBox.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-27T01:52:50.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Pago.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.Model\\Pago.cs",
+              "RelativeDocumentMoniker": "SDV.Model\\Pago.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.Model\\Pago.cs",
+              "RelativeToolTip": "SDV.Model\\Pago.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T15:34:36.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "LogsView.xaml",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\LogsView.xaml",
+              "RelativeDocumentMoniker": "SDV.UI\\Views\\LogsView.xaml",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\LogsView.xaml",
+              "RelativeToolTip": "SDV.UI\\Views\\LogsView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-26T21:32:41.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "XamlReader.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\AppData\\Local\\Temp\\.vsdbgsrc\\2c2dbd0e8613db5547a15cc48351e3de58ea1cb004f2006ca6c634e3eb5ff18c\\XamlReader.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\2c2dbd0e8613db5547a15cc48351e3de58ea1cb004f2006ca6c634e3eb5ff18c\\XamlReader.cs",
+              "ToolTip": "C:\\Users\\aleji\\AppData\\Local\\Temp\\.vsdbgsrc\\2c2dbd0e8613db5547a15cc48351e3de58ea1cb004f2006ca6c634e3eb5ff18c\\XamlReader.cs [Solo lectura]",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\2c2dbd0e8613db5547a15cc48351e3de58ea1cb004f2006ca6c634e3eb5ff18c\\XamlReader.cs [Solo lectura]",
+              "ViewState": "AgIAAOwBAAAAAAAAAAAWwP4BAAACAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T23:21:50.687Z",
+              "EditorCaption": " [Solo lectura]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "DesxEmpxPag.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.Model\\DesxEmpxPag.cs",
+              "RelativeDocumentMoniker": "SDV.Model\\DesxEmpxPag.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.Model\\DesxEmpxPag.cs",
+              "RelativeToolTip": "SDV.Model\\DesxEmpxPag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T14:41:43.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "LogsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\ViewModels\\LogsViewModel.cs",
+              "RelativeDocumentMoniker": "SDV.UI\\ViewModels\\LogsViewModel.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\ViewModels\\LogsViewModel.cs",
+              "RelativeToolTip": "SDV.UI\\ViewModels\\LogsViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T21:31:50.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\App.xaml.cs",
+              "RelativeDocumentMoniker": "SDV.UI\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\App.xaml.cs",
+              "RelativeToolTip": "SDV.UI\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T21:45:33.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "LogsView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\LogsView.xaml.cs",
+              "RelativeDocumentMoniker": "SDV.UI\\Views\\LogsView.xaml.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\LogsView.xaml.cs",
+              "RelativeToolTip": "SDV.UI\\Views\\LogsView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T21:36:03.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "RepositoryBase.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.DataAccess\\RepositoryBase.cs",
+              "RelativeDocumentMoniker": "SDV.DataAccess\\RepositoryBase.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.DataAccess\\RepositoryBase.cs",
+              "RelativeToolTip": "SDV.DataAccess\\RepositoryBase.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAUwBQAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T03:35:31.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "PagxEmp.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.Model\\PagxEmp.cs",
+              "RelativeDocumentMoniker": "SDV.Model\\PagxEmp.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.Model\\PagxEmp.cs",
+              "RelativeToolTip": "SDV.Model\\PagxEmp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T15:35:23.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ResourcePart.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
+              "ToolTip": "C:\\Users\\aleji\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAlwCcAAAAEAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T04:24:21.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "FormularioEmpleado.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\FormularioEmpleado.xaml.cs",
+              "RelativeDocumentMoniker": "SDV.UI\\Views\\FormularioEmpleado.xaml.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\FormularioEmpleado.xaml.cs",
+              "RelativeToolTip": "SDV.UI\\Views\\FormularioEmpleado.xaml.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAuwBkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T03:50:06.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "MessageDialogService.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Services\\MessageDialogService.cs",
+              "RelativeDocumentMoniker": "SDV.UI\\Services\\MessageDialogService.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Services\\MessageDialogService.cs",
+              "RelativeToolTip": "SDV.UI\\Services\\MessageDialogService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T15:56:58.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "CustomMessageBox.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\CustomMessageBox.xaml.cs",
+              "RelativeDocumentMoniker": "SDV.UI\\Views\\CustomMessageBox.xaml.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\CustomMessageBox.xaml.cs",
+              "RelativeToolTip": "SDV.UI\\Views\\CustomMessageBox.xaml.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAYwFQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T15:56:15.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "EmpleadoView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\EmpleadoView.xaml.cs",
+              "RelativeDocumentMoniker": "SDV.UI\\Views\\EmpleadoView.xaml.cs",
+              "ToolTip": "C:\\Users\\aleji\\source\\repos\\SistemaVentasSDV\\SDV.UI\\Views\\EmpleadoView.xaml.cs",
+              "RelativeToolTip": "SDV.UI\\Views\\EmpleadoView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T06:15:52.356Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

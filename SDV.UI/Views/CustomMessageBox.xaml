@@ -1,0 +1,181 @@
+﻿<Window x:Class="SDV.UI.Views.CustomMessageBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Mensaje del Sistema" 
+        Width="480" 
+        SizeToContent="Height"
+        MinHeight="200"
+        MaxHeight="650"
+        WindowStyle="None" 
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True"
+        Background="Transparent"
+        ResizeMode="NoResize">
+
+    <Window.Resources>
+        <Storyboard x:Key="WindowLoadAnimation">
+            <DoubleAnimation Storyboard.TargetName="MainBorder" 
+                             Storyboard.TargetProperty="Opacity"
+                             From="0" To="1" Duration="0:0:0.4"/>
+            <DoubleAnimation Storyboard.TargetName="MainBorder" 
+                             Storyboard.TargetProperty="RenderTransform.(ScaleTransform.ScaleX)"
+                             From="0.85" To="1" Duration="0:0:0.4">
+                <DoubleAnimation.EasingFunction>
+                    <CircleEase EasingMode="EaseOut"/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <DoubleAnimation Storyboard.TargetName="MainBorder" 
+                             Storyboard.TargetProperty="RenderTransform.(ScaleTransform.ScaleY)"
+                             From="0.85" To="1" Duration="0:0:0.4">
+                <DoubleAnimation.EasingFunction>
+                    <CircleEase EasingMode="EaseOut"/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+    </Window.Resources>
+
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Window.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource WindowLoadAnimation}"/>
+        </EventTrigger>
+    </Window.Triggers>
+
+    <Border x:Name="MainBorder" Background="#FFFFFF" CornerRadius="20" RenderTransformOrigin="0.5,0.5" Margin="20">
+        <Border.RenderTransform>
+            <ScaleTransform ScaleX="1" ScaleY="1"/>
+        </Border.RenderTransform>
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="25" ShadowDepth="2" Opacity="0.2" Color="#1A202C"/>
+        </Border.Effect>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Border Grid.Row="0" CornerRadius="20,20,0,0" Padding="25,20">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                        <GradientStop Color="#4158D0" Offset="0"/>
+                        <GradientStop Color="#C850C0" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <StackPanel Orientation="Horizontal">
+                    <Border Width="42" Height="42" CornerRadius="21" Background="White">
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="10" ShadowDepth="0" Opacity="0.2" Color="White"/>
+                        </Border.Effect>
+                        <TextBlock x:Name="IconText" 
+                                   Text="ℹ️" 
+                                   FontSize="22" 
+                                   VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center" 
+                                   RenderTransformOrigin="0.5,0.5">
+                            <TextBlock.RenderTransform>
+                                <RotateTransform Angle="0"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                    </Border>
+
+                    <TextBlock x:Name="TitleText" 
+                               Text="Aviso del Sistema" 
+                               Margin="15,0,0,0"
+                               FontSize="18" 
+                               FontWeight="SemiBold" 
+                               Foreground="White" 
+                               VerticalAlignment="Center">
+                        <TextBlock.Effect>
+                            <DropShadowEffect BlurRadius="4" ShadowDepth="1" Opacity="0.2" Color="Black"/>
+                        </TextBlock.Effect>
+                    </TextBlock>
+                </StackPanel>
+            </Border>
+
+            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" MaxHeight="400">
+                <Border Padding="30,25">
+                    <StackPanel>
+                        <TextBlock x:Name="MessageText" 
+                       Text="Aquí va el mensaje del sistema..." 
+                       TextWrapping="Wrap" 
+                       FontSize="15"
+                       LineHeight="22"
+                       Foreground="#4A5568"
+                       FontWeight="Normal"/>
+                    </StackPanel>
+                </Border>
+            </ScrollViewer>
+
+            <Border Grid.Row="2" Background="#F8FAFC" CornerRadius="0,0,20,20" Padding="25,15">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+
+                    <Button x:Name="BtnNoCancel" 
+                            Content="Cancelar" 
+                            Width="110" Height="38" 
+                            Margin="0,0,10,0" 
+                            Click="BtnOKYes_Click"
+                            Visibility="Collapsed"
+                            Cursor="Hand">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border x:Name="border" Background="#EDF2F7" CornerRadius="10" BorderBrush="#E2E8F0" BorderThickness="1">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" TextElement.Foreground="#718096" TextElement.FontWeight="Medium"/>
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter TargetName="border" Property="Background" Value="#E2E8F0"/>
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+
+                    <Button x:Name="BtnOKYes" 
+                            Content="Entendido" 
+                            Width="110" Height="38" 
+                            Click="BtnOKYes_Click"
+                            Cursor="Hand">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border x:Name="border" Background="#2D3748" CornerRadius="10">
+                                                <Border.Effect>
+                                                    <DropShadowEffect x:Name="shadow" BlurRadius="8" ShadowDepth="2" Opacity="0.2" Color="#2D3748"/>
+                                                </Border.Effect>
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" TextElement.Foreground="White" TextElement.FontWeight="Bold"/>
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter TargetName="border" Property="Background" Value="#1A202C"/>
+                                                </Trigger>
+                                                <Trigger Property="IsPressed" Value="True">
+                                                    <Setter TargetName="border" Property="RenderTransform">
+                                                        <Setter.Value>
+                                                            <ScaleTransform ScaleX="0.95" ScaleY="0.95"/>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                    <Setter TargetName="border" Property="RenderTransformOrigin" Value="0.5,0.5"/>
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Border>
+</Window>

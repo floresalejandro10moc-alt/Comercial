@@ -1,0 +1,81 @@
+﻿<UserControl x:Class="SDV.UI.Views.PlanCuentasView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="#F9FAFB" FontFamily="Segoe UI">
+    <Grid Margin="35,30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="0,0,0,25">
+            <TextBlock Text="Contabilidad - Catálogo General" FontSize="20" FontWeight="SemiBold" Foreground="#111827"/>
+            <TextBlock Text="Estructura del Plan de Cuentas" Foreground="#6B7280" FontSize="12" Margin="0,4,0,0"/>
+        </StackPanel>
+
+        <Grid Grid.Row="1" Margin="0,0,0,25">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0">
+                <TextBlock Text="Catálogo de Cuentas" FontSize="26" FontWeight="Bold" Foreground="#111827"/>
+                <TextBlock Text="Listado completo de cuentas de Mayor y Detalle." Foreground="#6B7280" FontSize="13" Margin="0,4,0,0"/>
+            </StackPanel>
+
+            <Border Grid.Column="2" Background="White" CornerRadius="8" BorderBrush="#E5E7EB" BorderThickness="1" Width="320" Height="42" Margin="0,0,15,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="🔍" VerticalAlignment="Center" Margin="15,0,10,0" Foreground="#9CA3AF" FontSize="16"/>
+                    <TextBox Grid.Column="1" Text="{Binding FiltroCuentas, UpdateSourceTrigger=PropertyChanged}" BorderThickness="0" Background="Transparent" VerticalContentAlignment="Center" Foreground="#111827" FontSize="13"/>
+                </Grid>
+            </Border>
+
+            <Button Grid.Column="3" Width="42" Height="42" Background="White" BorderBrush="#E5E7EB" BorderThickness="1" Cursor="Hand">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="8">
+                            <TextBlock Text="🔄" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </Grid>
+
+        <Border Grid.Row="2" Background="White" CornerRadius="12" BorderBrush="#E5E7EB" BorderThickness="1">
+            <DataGrid ItemsSource="{Binding PlanCuentas}" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" GridLinesVisibility="None" RowHeight="65" Background="Transparent" BorderThickness="0" Margin="15">
+                <DataGrid.Resources>
+                    <Style TargetType="DataGridColumnHeader">
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="Padding" Value="12,10"/>
+                        <Setter Property="FontWeight" Value="SemiBold"/>
+                        <Setter Property="Foreground" Value="#6B7280"/>
+                        <Setter Property="FontSize" Value="11"/>
+                    </Style>
+                </DataGrid.Resources>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="CÓDIGO" Binding="{Binding IdCodigoCuenta}" Width="150" FontWeight="Bold"/>
+                    <DataGridTextColumn Header="NOMBRE CUENTA" Binding="{Binding CueNombreCuenta}" Width="*"/>
+                    <DataGridTemplateColumn Header="TIPO" Width="100">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Border Background="#F3F4F6" CornerRadius="12" Padding="8,4">
+                                    <TextBlock Text="{Binding CueTipoCuenta}" FontSize="11" HorizontalAlignment="Center" Foreground="#374151" FontWeight="Bold"/>
+                                </Border>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn Header="ESTADO" Binding="{Binding CueEstadoCuenta}" Width="100" Foreground="#047857"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+    </Grid>
+</UserControl>

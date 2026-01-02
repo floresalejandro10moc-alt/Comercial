@@ -1,0 +1,147 @@
+﻿<Window x:Class="SDV.UI.Views.FormularioEmpleado"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:conv="clr-namespace:SDV.UI.Converters"
+        mc:Ignorable="d"
+        Title="Gestión de Empleado" Height="600" Width="700"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="#F4F4F4">
+
+    <Window.Resources>
+        <conv:IdToReadOnlyConverter x:Key="IdToReadOnlyConverter"/>
+    </Window.Resources>
+
+    <Border Background="White" Margin="20" CornerRadius="8" Padding="25">
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="10" ShadowDepth="2" Opacity="0.1"/>
+        </Border.Effect>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Margin="0,0,0,20">
+                <TextBlock Text="Nuevo Empleado" FontSize="22" FontWeight="Bold" Foreground="#333"/>
+                <TextBlock Text="Información personal y laboral." FontSize="12" Foreground="Gray" Margin="0,5,0,0"/>
+                <Separator Margin="0,15,0,0" Background="#E0E0E0"/>
+            </StackPanel>
+
+            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Padding="0,0,10,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0" Grid.Column="0" Margin="0,0,0,15">
+                        <TextBlock Text="Cédula *" FontWeight="SemiBold" Foreground="#555" Margin="0,0,0,5"/>
+
+                        <TextBox x:Name="TxtCedula"
+                                 Text="{Binding EmpleadoActual.EmpCedula}" 
+                                 MaxLength="10" Height="35" VerticalContentAlignment="Center" Padding="5"
+                                 IsReadOnly="{Binding EmpleadoActual.IdEmpleado, Converter={StaticResource IdToReadOnlyConverter}}"
+                                 PreviewMouseLeftButtonUp="TxtCedula_Click"/>
+
+                        <TextBlock Text="Ej: 1712345678" Foreground="#999" FontSize="10"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="0" Grid.Column="2" Margin="0,0,0,15">
+                        <TextBlock Text="Fecha Nacimiento *" FontWeight="SemiBold" Foreground="#555" Margin="0,0,0,5"/>
+                        <DatePicker SelectedDate="{Binding EmpleadoActual.EmpFechaNacimiento}" Height="35" VerticalContentAlignment="Center"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Grid.Column="0" Margin="0,0,0,15">
+                        <TextBlock Text="Primer Nombre *" FontWeight="SemiBold" Foreground="#555" Margin="0,0,0,5"/>
+                        <TextBox Text="{Binding EmpleadoActual.EmpNombre1}" Height="35" VerticalContentAlignment="Center" Padding="5"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Grid.Column="2" Margin="0,0,0,15">
+                        <TextBlock Text="Segundo Nombre" FontWeight="SemiBold" Foreground="#555" Margin="0,0,0,5"/>
+                        <TextBox Text="{Binding EmpleadoActual.EmpNombre2}" Height="35" VerticalContentAlignment="Center" Padding="5"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="2" Grid.Column="0" Margin="0,0,0,15">
+                        <TextBlock Text="Primer Apellido *" FontWeight="SemiBold" Foreground="#555" Margin="0,0,0,5"/>
+                        <TextBox Text="{Binding EmpleadoActual.EmpApellido1}" Height="35" VerticalContentAlignment="Center" Padding="5"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="2" Grid.Column="2" Margin="0,0,0,15">
+                        <TextBlock Text="Segundo Apellido" FontWeight="SemiBold" Foreground="#555" Margin="0,0,0,5"/>
+                        <TextBox Text="{Binding EmpleadoActual.EmpApellido2}" Height="35" VerticalContentAlignment="Center" Padding="5"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="3" Grid.Column="0" Margin="0,0,0,15">
+                        <TextBlock Text="Sexo *" FontWeight="SemiBold" Foreground="#555" Margin="0,0,0,5"/>
+                        <ComboBox SelectedValue="{Binding EmpleadoActual.EmpSexo}" SelectedValuePath="Content" Height="35" VerticalContentAlignment="Center" Padding="5">
+                            <ComboBoxItem Content="M"/>
+                            <ComboBoxItem Content="F"/>
+                        </ComboBox>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="3" Grid.Column="2" Margin="0,0,0,15">
+                        <TextBlock Text="Cargo (Rol) *" FontWeight="SemiBold" Foreground="#555" Margin="0,0,0,5"/>
+                        <ComboBox ItemsSource="{Binding ListaRoles}"
+                                  DisplayMemberPath="Nombre"
+                                  SelectedValuePath="Id"
+                                  SelectedValue="{Binding EmpleadoActual.IdRol}"
+                                  Height="35" VerticalContentAlignment="Center" Padding="5"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="4" Grid.Column="0" Margin="0,0,0,15">
+                        <TextBlock Text="Correo Personal" FontWeight="SemiBold" Foreground="#555" Margin="0,0,0,5"/>
+                        <TextBox Text="{Binding EmpleadoActual.EmpMail}" Height="35" VerticalContentAlignment="Center" Padding="5"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="4" Grid.Column="2" Margin="0,0,0,15">
+                        <TextBlock Text="Departamento *" FontWeight="SemiBold" Foreground="#555" Margin="0,0,0,5"/>
+                        <ComboBox ItemsSource="{Binding ListaDepartamentos}"
+                                  DisplayMemberPath="Nombre"
+                                  SelectedValuePath="Id"
+                                  SelectedValue="{Binding EmpleadoActual.IdDepartamento}"
+                                  Height="35" VerticalContentAlignment="Center" Padding="5"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="5" Grid.Column="0" Margin="0,0,0,15">
+                        <TextBlock Text="Sueldo ($) *" FontWeight="SemiBold" Foreground="#555" Margin="0,0,0,5"/>
+                        <TextBox Text="{Binding EmpleadoActual.EmpSueldo}" Height="35" VerticalContentAlignment="Center" Padding="5"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="5" Grid.Column="2" Margin="0,0,0,15" VerticalAlignment="Bottom">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            <TextBlock Text="Estado: " VerticalAlignment="Center" FontWeight="Bold"/>
+                            <Border Background="#D4EFDF" CornerRadius="10" Padding="15,5">
+                                <TextBlock Text="ACTIVO" Foreground="#27AE60" FontWeight="Bold" FontSize="12"/>
+                            </Border>
+                        </StackPanel>
+                    </StackPanel>
+
+                </Grid>
+            </ScrollViewer>
+
+            <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,15,0,0">
+                <Button Content="CANCELAR" IsCancel="True"
+                        Background="White" Foreground="#555" BorderBrush="#CCC" BorderThickness="1"
+                        Width="100" Height="40" Margin="0,0,10,0" FontWeight="SemiBold"/>
+
+                <Button Content="GUARDAR EMPLEADO" 
+                        Command="{Binding GuardarCommand}"
+                        CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}"
+                        Style="{StaticResource BtnPrimary}"
+                        Width="160" Height="40"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>
