@@ -19,9 +19,9 @@ namespace SDV.DataAccess.Repositories
                         e.emp_Cedula,
                         u.id_Rol,
                         r.rol_descripcion
-                    FROM USUARIOS u
-                    LEFT JOIN Empleados e ON u.id_Empleado = e.id_Empleado
-                    LEFT JOIN Roles r ON u.id_Rol = r.id_Rol
+                    FROM usuarios u
+                    LEFT JOIN empleados e ON u.id_Empleado = e.id_Empleado
+                    LEFT JOIN roles r ON u.id_Rol = r.id_Rol
                     WHERE u.usr_Login = @User 
                       AND u.usr_Password = @Pass 
                       AND u.ESTADO_USR = 'ACT'";

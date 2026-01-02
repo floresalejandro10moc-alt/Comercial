@@ -1,0 +1,21 @@
+## Erase archivos de compilación y carpetas temporales de Visual Studio
+[Bb]in/
+[Oo]bj/
+.vs/
+appsettings.json
+TestResults/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Secretos y configuración local (VITAL PARA SEGURIDAD)
+appsettings.json
+appsettings.Development.json
+
+## Archivos de base de datos locales (si los hubiera)
+*.mdf
+*.ldf
+
+## Otros
+.DS_Store

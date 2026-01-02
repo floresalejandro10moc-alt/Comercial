@@ -1,21 +1,36 @@
 ﻿using Dapper;
 using MySql.Data.MySqlClient;
 using System.Data;
+using Microsoft.Extensions.Configuration; // Para leer el JSON
+using System.IO;
 
 namespace SDV.DataAccess
 {
     public abstract class RepositoryBase
     {
-        // Reemplaza 'toor' con tu contraseña real si es diferente
-        protected string ConnectionString = "Server=localhost;Port=3310;Database=SistemaVentasSDV;Uid=root;Pwd=toor;";
+        // Cambiamos a readonly y el nombre por convención
+        protected readonly string _connectionString;
 
-        protected IDbConnection GetConnection() => new MySqlConnection(ConnectionString);
+        public RepositoryBase()
+        {
+            // 1. Esto busca el archivo appsettings.json en tu carpeta del proyecto
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+
+            IConfiguration configuration = builder.Build();
+
+            // 2. Trae la conexión que pusimos en el JSON
+            _connectionString = configuration.GetConnectionString("DefaultConnection");
+        }
+
+        // Este método sigue igual, así que tus otros archivos no fallarán
+        protected IDbConnection GetConnection() => new MySqlConnection(_connectionString);
 
         static RepositoryBase()
         {
-            // Esto es vital para que Dapper entienda los guiones bajos de la BD
+            // Mantenemos esto porque es vital para tus nombres con guiones bajos
             DefaultTypeMap.MatchNamesWithUnderscores = true;
         }
     }
 }
-// <--- ¡IMPORTANTE! Asegúrate de que esta última llave exista.
