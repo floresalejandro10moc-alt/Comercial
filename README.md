@@ -29,7 +29,6 @@ Para ejecutar este sistema, es necesario configurar las credenciales de la base 
     "DefaultConnection": "Server=mysql-2944617e-puce-864.c.aivencloud.com;Port=17843;Database=sistemaventassdv;Uid=avnadmin;Pwd=Aqui_la_contrasenia;SslMode=Required"
   }
 }
-## Imagenes
 
 
 
