@@ -29,13 +29,8 @@ Para ejecutar este sistema, es necesario configurar las credenciales de la base 
     "DefaultConnection": "Server=mysql-2944617e-puce-864.c.aivencloud.com;Port=17843;Database=sistemaventassdv;Uid=avnadmin;Pwd=Aqui_la_contrasenia;SslMode=Required"
   }
 }
+## Imagenes
 
-Imagenes
-<img width="1023" height="652" alt="image" src="https://github.com/user-attachments/assets/c0506f25-1d45-495a-afbf-504116557e3d" />
-<img width="1714" height="913" alt="image" src="https://github.com/user-attachments/assets/e3a657b0-ebe9-46dc-b8fc-e49c5d72b2fe" />
-<img width="1718" height="910" alt="image" src="https://github.com/user-attachments/assets/13bce3fb-f8bc-43bf-9d74-d393ef3c081b" />
-<img width="1721" height="908" alt="image" src="https://github.com/user-attachments/assets/052d36c1-b9e7-46a9-9e0f-88d50382f02d" />
-<img width="1720" height="900" alt="image" src="https://github.com/user-attachments/assets/a893ade6-ad47-4583-b1a7-de6d706b7c19" />
 
 
 
